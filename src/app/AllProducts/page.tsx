@@ -3,13 +3,13 @@ import ShoesPage2 from "./shoesPage";
 export default function AllProducts() {
   return (
     <div className="px-6">
-      {/* <TopHead /> */}
+      <TopHead />
       <div className="flex">
-        {/* <SideBar /> */}
+        <SideBar />
 
         <ShoesPage2 />
       </div>
-      {/* <BottomBar /> */}
+      <BottomBar />
     </div>
   );
 }
