@@ -31,7 +31,7 @@ export default function Features() {
           Cause everyone should know the feeling of running in that perfect
           pair.
         </p>
-        <Link href="/AllProducts">
+        <Link href="/products">
           <button className="w-[130px] sm:w-[152px] h-[39px] bg-black text-white text-sm sm:text-base rounded-full">
             Find Your Shoe
           </button>

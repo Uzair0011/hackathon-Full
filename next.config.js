@@ -1,5 +1,9 @@
-module.exports = {
-  images: {
-    domains: ["cdn.sanity.io"], // Allow loading images from Sanity
-  },
-};
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+      domains: ['cdn.sanity.io'], // Allow images from Sanity's CDN
+    },
+  };
+  
+  module.exports = nextConfig;
+  

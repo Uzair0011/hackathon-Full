@@ -22,19 +22,19 @@ export default function Navbar() {
       {/* Navigation Menu */}
       <ul className="hidden md:flex gap-4 sm:gap-5 pl-0 sm:pl-20">
         <li className="text-sm hover:underline">
-          <Link href="/AllProducts">New & Featured</Link>
+          <Link href="/products">New & Featured</Link>
         </li>
         <li className="text-sm hover:underline">
-          <Link href="/AllProducts">Men</Link>
+          <Link href="/products">Men</Link>
         </li>
         <li className="text-sm hover:underline">
-          <Link href="/AllProducts">Women</Link>
+          <Link href="/products">Women</Link>
         </li>
         <li className="text-sm hover:underline">
-          <Link href="/AllProducts">Kids</Link>
+          <Link href="/products">Kids</Link>
         </li>
         <li className="text-sm hover:underline">
-          <Link href="/AllProducts">Sale</Link>
+          <Link href="/products">Sale</Link>
         </li>
         <li className="text-sm hover:underline">
           <Link href="/">SNKRS</Link>

@@ -53,7 +53,7 @@ export function SheetSide() {
                 <Link href="/Detail3">Kids</Link>
               </li>
               <li className="text-sm hover:underline">
-                <Link href="/AllProducts">Sale</Link>
+                <Link href="/products">Sale</Link>
               </li>
               <li className="text-sm hover:underline">
                 <Link href="/">SNKRS</Link>
