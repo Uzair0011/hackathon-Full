@@ -13,9 +13,12 @@ export default function Hello() {
         </h3>
         <div data-aos="fade-up" className="text-[14px] sm:text-[16px] mt-2">
           Download the app to access everything Nike.{" "}
+          <Link href="/products">
           <button className="text-blue-500">
             <u>Get Your Great</u>
           </button>
+          </Link>
+
         </div>
       </div>
 
@@ -51,10 +54,13 @@ export default function Hello() {
             max.
           </p>
           <div className="flex gap-3 mt-6">
-            <button className="w-[120px] h-[40px] bg-black text-white rounded-full text-sm">
-              Notify Me
-            </button>
-            <Link href="#Air">
+            <Link href="/joinUs">
+              <button className="w-[120px] h-[40px] bg-black text-white rounded-full text-sm">
+                Notify Me
+              </button>
+            </Link>
+
+            <Link href="/products">
               <button className="w-[120px] h-[40px] bg-black text-white rounded-full text-sm">
                 Shop Air Max
               </button>

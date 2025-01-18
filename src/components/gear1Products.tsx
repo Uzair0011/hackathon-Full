@@ -20,13 +20,14 @@ export default function Gear1Products() {
           <div key={index} className="  w-[267px] h-[400px] px-3 pt-5">
             {/* Image */}
             <div className="w-full h-auto flex items-center justify-center mb-4 hover:scale-90  duration-500 cursor-pointer">
-              <Image
-                src={`/${Idata.imageURL}.png`}
-                alt="logo"
-                width={300}
-                height={300}
-                className="rounded-md"
-              />
+
+                <Image
+                  src={`/${Idata.imageURL}.png`}
+                  alt="logo"
+                  width={300}
+                  height={300}
+                  className="rounded-md"
+                />
             </div>
             {/* Title and Price */}
             <div className="flex  mb-2">

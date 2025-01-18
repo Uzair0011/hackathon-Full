@@ -1,7 +1,5 @@
 //schema
-
-import { defineType} from "sanity";
-
+import { defineType } from "sanity";
 // structure of your content
 export const Product = defineType({
   // backend
@@ -16,9 +14,6 @@ export const Product = defineType({
       title: "Image",
       type: "array",
       of: [{ type: "image" }],
-      // options: {
-      //   hotspot: true, // Enable image cropping
-      // },
     },
     {
       name: "title",
@@ -45,20 +40,9 @@ export const Product = defineType({
       title: "Product Slug",
       type: "slug",
       options: {
-        source: "title", // Automatically generates the slug from a title field
-        maxLength: 200, // Optional: limits the length of the slug
+        source: "title",
+        maxLength: 200,
       },
     },
-    // {
-    //   name: "id",
-    //   title: "ID",
-    //   type: "string",
-    // },
-
-    // {
-    //   name: "description",
-    //   title: "Title Description",
-    //   type: "text",
-    // },
   ],
 });

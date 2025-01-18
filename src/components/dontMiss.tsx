@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DontMiss() {
   return (
     <div className="px-4 py-6">
       {/* Heading */}
-      <h1
-      data-aos="fade-left"
-      className="text-[22px] font-medium mb-4">Don&apos;t Miss</h1>
+      <h1 data-aos="fade-left" className="text-[22px] font-medium mb-4">
+        Don&apos;t Miss
+      </h1>
 
       {/* Images Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -40,9 +41,12 @@ export default function DontMiss() {
             Your built-to-last, all-week wears—but with style only Jordan Brand
             can deliver.
           </p>
-          <button className="w-[100px] md:w-[120px] h-[39px] bg-black text-white rounded-full">
-            Shop
-          </button>
+          <Link href="/products">
+            <button className="w-[100px] md:w-[120px] h-[39px] bg-black text-white rounded-full">
+              Shop
+            </button>
+          </Link>
+          
         </div>
       </div>
     </div>

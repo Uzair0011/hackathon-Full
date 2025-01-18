@@ -1,51 +1,20 @@
-// "use client";
-import Image from "next/image";
-import Link from "next/link";
-import { client } from "@/sanity/lib/client";
 
-interface IProduct {
-  title: string;
-  price: number;
-  productURL: string;
-  image: string[];
-}
+import AllProducts from "./page1";
+import TopHead from "./top";
+import SideBar from "./sideBar";
+import BottomBar from "./bottom";
 
-export default async function AllProducts() {
-  const products: IProduct[] = await client.fetch(`
-    *[_type == "product"]{
-      title, 
-      price,
-      "productURL": slug.current,
-      "image": image[].asset->url
-    }
-  `);
-
+export default function InsidePage2() {
   return (
-    <div className="px-6">
-      <div className="w-full h-auto flex flex-wrap gap-4 justify-center">
-        {products.map((product) => (
-          <div
-            key={product.productURL}
-            className="w-[250px] flex flex-col items-center border p-4 rounded-lg shadow-md"
-          >
-            <Link href={`/products/${product.productURL}`}>
-              <div className="w-full h-[270px] flex items-center justify-center bg-gray-100 cursor-pointer">
-                <Image
-                  src={product.image[0]}
-                  alt={product.title}
-                  width={200}
-                  height={200}
-                  className="object-contain"
-                />
-              </div>
-            </Link>
-            <div className="text-center mt-4">
-              <h3 className="text-lg font-medium">{product.title}</h3>
-              <p className="text-sm text-gray-500">₹{product.price}</p>
-            </div>
-          </div>
-        ))}
+    <div className="h-auto ">
+      <TopHead />
+      <div className="flex ">
+        <SideBar />
+        <AllProducts />
       </div>
+      <div className="text-center pb-11">
+        <BottomBar />
+      </div>{" "}
     </div>
   );
 }
